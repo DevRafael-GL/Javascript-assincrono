@@ -1,32 +1,27 @@
-// const carros = {
-//   marca: 'Honda',
-//   ano: 2021,
-// }
-
-// const {marca, ano} = carros
-
-// console.log(marca, ano)
-
-// const clientes = {
-//   nome: 'Rafael',
-//   compras: {
-//     digitais: {
-//       livros: ['Livro 1', 'Livro 2'],
-//       videos: ['Video JS' , 'video HTML']
-//     },
-//     fisicas: {
-//       cadernos: ['Caderno 1']
-//     }
-//   }
-// }
-
-// const {digitais, fisicas, digitais: {livros, videos}} = clientes.compras;
-
-// console.log(livros)
+// Extraia o backgroundColor, color e margin do btn
+const btn = document.querySelector('button');
+const btnStyles = getComputedStyle(btn);
 
 
-function handleKeyboard({key, keyCode}) {
-  console.log(key, keyCode)
+const {backgroundColor, margin, color} = btnStyles
+
+console.log(backgroundColor)
+console.log(color)
+console.log(margin)
+
+// Troque os valores das variáveis abaixo
+let cursoAtivo = 'JavaScript';
+let cursoInativo = 'HTML';
+
+[cursoAtivo, cursoInativo] = [cursoInativo, cursoAtivo];
+
+console.log(cursoAtivo, cursoInativo)
+// Corrija o erro abaixo
+const cachorro = {
+  nome: 'Bob',
+  raca: 'Labrador',
+  cor: 'Amarelo'
 }
 
-document.addEventListener('keyup', handleKeyboard)
+const {cor: bobCor} = cachorro;
+console.log(bobCor)
