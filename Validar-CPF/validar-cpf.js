@@ -21,7 +21,7 @@ export default class ValidarCpf {
       cpfElement.value = this.formatar(cpfElement.value)
       cpfElement.classList.add('valido')
       cpfElement.classList.remove('erro')
-      cpfElement.nextElementSibling.classList.remover('ativar')
+      cpfElement.nextElementSibling.classList.remove('ativar')
     } else {
       cpfElement.classList.add('erro')
       cpfElement.classList.remove('valido')
